@@ -1,0 +1,8 @@
+SELECT DISTINCT  employee_name FROM lekshmi_employee;
+UPDATE lekshmi_employee SET employee_name='janu' WHERE emp_id='1';
+SELECT * FROM lekshmi_employee WHERE employee_name IN('lal','Mina');
+SELECT employee_name as FIRSTNAME FROM lekshmi_employee;
+SELECT CONCAT(employee_name,employee_name) FROM lekshmi_employee;
+SELECT employee_name as workername FROM lekshmi_employee;
+SELECT * FROM lekshmi_employee LIMIT 2;
+ALTER TABLE lekshmi_employee CHANGE employee_name emp_name VARCHAR(50);
