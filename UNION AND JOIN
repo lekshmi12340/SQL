@@ -1,0 +1,9 @@
+SELECT * FROM list CROSS JOIN classinfo;
+ALTER TABLE classinfo ADD FOREIGN KEY(lisid) REFERENCES list(lisid);
+SELECT lisname FROM list 
+INNER JOIN classinfo WHERE
+list.lisid=classinfo.lisid;
+SELECT * FROM list NATURAL JOIN classinfo;
+SELECT lisname FROM list
+UNION 
+SELECT address FROM classinfo;
